@@ -17,54 +17,6 @@
       <div class="availability" id="registrationStatus"><span class="status-dot"></span><strong>Checking availability...</strong></div>
       <p class="registration-count" id="registrationCount" aria-live="polite">Loading registered students...</p>
 
-      <form id="registrationForm" novalidate>
-        <label class="field" for="name">
-          <span>Full name <b>Required</b></span>
-          <input id="name" name="name" type="text" autocomplete="name" placeholder="Enter your full name" required>
-        </label>
-        <label class="field" for="enrollment">
-          <span>Enrollment number <b>Required</b></span>
-          <input id="enrollment" name="enrollment" type="text" autocomplete="off" placeholder="Enter your enrollment number" required>
-        </label>
-        <label class="field" for="cnic">
-          <span>CNIC number <b>Required</b></span>
-          <input id="cnic" name="cnic" type="text" inputmode="numeric" placeholder="42201-1234567-1" maxlength="15" required>
-        </label>
-        <label class="field" for="semester">
-          <span>Semester <b>Required</b></span>
-          <select id="semester" name="semester" required>
-            <option value="" selected disabled>Select your semester</option>
-            <option value="1">1st semester</option>
-            <option value="2">2nd semester</option>
-            <option value="3">3rd semester</option>
-            <option value="4">4th semester</option>
-            <option value="5">5th semester</option>
-            <option value="6">6th semester</option>
-            <option value="7">7th semester</option>
-            <option value="8">8th semester</option>
-          </select>
-        </label>
-        <label class="field" for="department">
-          <span>Department <b>Required</b></span>
-          <select id="department" name="department" required>
-            <option value="" selected disabled>Select your department</option>
-            <option value="cs">Computer Science (CS)</option>
-            <option value="it">Information Technology (IT)</option>
-            <option value="ai">Artificial Intelligence (AI)</option>
-          </select>
-        </label>
-        <label class="field" for="phone">
-          <span>Phone number <b>Required</b></span>
-          <input id="phone" name="phone" type="tel" autocomplete="tel" inputmode="tel" placeholder="+92 356 1234567" required>
-        </label>
-        <label class="field trap" aria-hidden="true">
-          <span>Website</span>
-          <input name="website" type="text" tabindex="-1" autocomplete="off">
-        </label>
-        <button type="submit"><span>Register now</span><span aria-hidden="true">&#8594;</span></button>
-        <div id="formMessage" class="form-message" role="status" aria-live="polite"></div>
-      </form>
-    </section>
   </main>
   <script src="script.js"></script>
 </body>
